@@ -13,7 +13,7 @@ Route::middleware(['auth:sanctum'])->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::middleware(['auth:sanctum'])->group(function () {
+// Route::middleware(['auth:sanctum'])->group(function () {
 
     Route::apiResource('users', UserController::class);
     Route::apiResource('contracts', ContractController::class);
@@ -32,4 +32,4 @@ Route::middleware(['auth:sanctum'])->group(function () {
             Route::get('allContracts', 'allContracts');
             Route::get('allStakeholders', 'allStakeholders');
         });
-});
+// });

@@ -6,7 +6,7 @@
       'w-[250px]': sidebarStore.show
       }"
   >
-    <div class="p-3 text-center">{{ authStore.authUser.name }}</div>
+    <div class="p-3 text-center">{{ authStore.authUser?.name }}</div>
     <div class="p-3 flex flex-col gap-1">
       <SidebarItem route="/users" :title="$t('Users')" />
       <SidebarItem route="/contracts" :title="$t('Contracts')" />
